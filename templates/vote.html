@@ -1,0 +1,14 @@
+<h1>Hot or Not!</h1>
+
+<form name='foo' action='/' method='post'>
+
+  {% for term in terms %}
+    <h2>{{ term }}</h2>
+    <label for='hot'>Hot</label>
+    <input type='radio' name='{{ term }}' value='hot'></input>
+    <label for='hot'>Not</label>
+    <input type='radio' name='{{ term }}' value='not'></input>
+  {% endfor %}
+
+  <input type='submit'></input>
+</form>

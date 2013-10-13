@@ -1,0 +1,9 @@
+<h1>Hot or Not Results</h1>
+
+{% for vote in votes %}
+
+	<h2>{{ vote['term'] }}</h2>
+	<h3>Hot: {{ vote['hot'] }}</h3>
+	<h3>Not: {{ vote['not'] }}</h3>
+	
+{% endfor %}
